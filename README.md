@@ -8,9 +8,8 @@ This project consists of designing and implementing a relational database to sto
 -Team Members
 
 Member Arturo Enrique Hincapie Orozco
-Member 2
-Member 3
-Member 4
+Member Beiker Romario Jaramillo Giraldo
+Member Valentina Carrillo Peñuela
 
 -Project Structure
 
