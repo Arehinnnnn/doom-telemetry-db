@@ -24,3 +24,9 @@ PostgreSQL
 Git & GitHub
 
 -Current Progress
+[x]Requirements definition
+[x]ER Diagram
+[x]Initial repository setup
+[ ]Relational schema
+[ ]Implementation
+[ ] Queries & analytics
