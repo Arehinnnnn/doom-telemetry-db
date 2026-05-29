@@ -1,0 +1,18 @@
+
+INSERT INTO UXInstrument (instrument_name) VALUES 
+('Inmersión Espacial'),
+('Desafío / Dificultad'),
+('Competencia Percibida'),
+('Carga Mental (NASA-TLX)'),
+('Satisfacción General');
+
+-
+INSERT INTO UXResponse (player_id, instrument_id, game_id, score)
+SELECT 
+    gp.player_id,
+    inst.instrument_id,
+    gp.game_id,
+    -- Genera un puntaje decimal simulado coherente con un rango de 1.0 a 5.0
+    ROUND((1.0 + (RANDOM() * 4.0))::numeric, 2) AS score
+FROM GameParticipant gp
+CROSS JOIN UXInstrument inst;
