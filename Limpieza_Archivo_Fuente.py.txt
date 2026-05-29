@@ -1,0 +1,13 @@
+import re
+
+archivo_entrada = "beiker (1).txtxt"
+archivo_salida = "telemetry_clean_for_staging.tsv"
+
+with open(archivo_entrada, "r") as entrada, open(archivo_salida, "w") as salida:
+    for linea in entrada:
+        linea = linea.strip()
+        
+        if re.match(r"^\d{4}-\d{2}-\d{2}", linea):
+            salida.write(linea + "\n")
+
+print("¡Paso 1 Completado! Archivo 'telemetry_clean_for_staging.tsv' generado con éxito.")
